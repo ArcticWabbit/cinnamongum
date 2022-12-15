@@ -1,0 +1,14 @@
+baseURL: "https://cinnamongum.art/"
+languageCode: en-us
+title: Cinnamon Gum
+theme: coyote
+
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: search/
+outputs:
+  home:
+    - HTML
+    - JSON
