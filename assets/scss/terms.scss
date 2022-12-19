@@ -1,0 +1,28 @@
+.terms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+  
+.termsItem {
+    position: relative;
+    align-items: center;
+    display: flex;
+    background-color: #4d4d4d;
+    border-radius: 8px;
+    transition: box-shadow .2s;
+
+    &:hover {
+        box-shadow: 0 6px 12px -4px #4d4d4d;
+      }
+
+    &__body {
+        padding: 0 1.6rem;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}

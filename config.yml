@@ -7,7 +7,7 @@ menu:
   main:
     - identifier: tags
       name: Tags
-      url: /tags/
+      url: tags/
       weight: 1
 outputs:
   home:
