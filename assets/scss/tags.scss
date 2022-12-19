@@ -1,0 +1,50 @@
+.tags {
+  max-width: 768px;
+  padding: 1.6rem 3.2rem;
+  margin: 0 auto;
+  color: #EDEDED;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 4.8rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+  }
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.resultItem {
+  display: flex;
+
+  &__media {
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+
+  &__body {
+    padding: 0 1.6rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+
+  &__footer {
+    color: rgb(169, 169, 169);
+    font-size: 1.1rem;
+  }
+}
