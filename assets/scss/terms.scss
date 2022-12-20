@@ -1,17 +1,25 @@
 .terms {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;;
     justify-content: center;
     gap: 2.4rem;
-  }
+    margin: 24px auto 20px;
+}
   
 .termsItem {
     position: relative;
     align-items: center;
-    display: flex;
     background-color: #4d4d4d;
     border-radius: 8px;
     transition: box-shadow .2s;
+    padding: 0;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 
     &:hover {
         box-shadow: 0 6px 12px -4px #4d4d4d;
@@ -19,10 +27,18 @@
 
     &__body {
         padding: 0 1.6rem;
+        display: inline-block;
+        margin: 10px;
+        font-weight: 500;
+        text-align: -webkit-match-parent;
     }
 
     &__title {
         font-size: 1.8rem;
         font-weight: 700;
+    }
+
+    a {
+      text-decoration: none;
     }
 }

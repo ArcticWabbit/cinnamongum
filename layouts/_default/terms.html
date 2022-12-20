@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="tags">
     <div class="tags__header">
-      <h2 class="tags__title">{{ .Title }}</h2>
+      <h1 class="tags__title">{{ .Title }}</h1>
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
         <circle cx="8.5" cy="8.5" r="1" fill="currentColor"></circle>
@@ -9,13 +9,13 @@
      </svg>
     </div>
 
-    {{ range sort .Site.Taxonomies.tags }}
     <div class="terms">
-        <div class="termsItem">
-            <div class="termsItem__body">
-              <h3 class="termsItem__title"><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></h3>
-            </div>
-          </div>
+      {{ range sort .Site.Taxonomies.tags }}
+        <ul class="termsItem">
+            <li class="termsItem__body">
+              <a class="termsItem__title" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+            </li>
+        </ul>
     {{ end }}
     </div>
 </section>
