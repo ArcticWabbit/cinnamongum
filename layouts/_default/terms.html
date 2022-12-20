@@ -18,5 +18,12 @@
         </ul>
     {{ end }}
     </div>
+
+    {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{- $paginator := .Paginate $pages }}
+    
+    {{- if gt $paginator.TotalPages 1 }}
+      {{- partial "pagination.html" . -}}
+    {{- end }}
 </section>
 {{ end }}
