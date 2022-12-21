@@ -1,4 +1,4 @@
-baseURL: "//localhost:1313/"
+baseURL: "http://localhost:1313/"
 languageCode: en-us
 title: Cinnamon Gum
 theme: coyote
@@ -7,9 +7,12 @@ menu:
   main:
     - identifier: tags
       name: Tags
-      url: tags/
+      url: /tags/
       weight: 1
 outputs:
   home:
     - HTML
     - JSON
+
+author:
+  name: "Nuzhat Radia"
