@@ -25,6 +25,33 @@ a {
   max-width: 960px;
   margin: 0 auto;
 }
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3.2rem 1.6rem;
+
+  &__logo {
+    max-width: 30%;
+  }
+
+  &__text {
+    color: #EDEDED;
+    padding-left: 2.4rem;
+
+    h1 {
+      font-size: 3.8rem;
+    }
+
+    h2 {
+      font-size: 2.8;
+      font-weight: 400;
+    }
+  }
+}
+
 .main {
   min-height: calc(100vh - 87px - 48.5px);
 }
