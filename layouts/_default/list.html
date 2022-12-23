@@ -1,3 +1,4 @@
+<!-- Tags page -->
 {{- define "main" }}
 <section class="tags">
   <div class="tags__header">
@@ -9,6 +10,7 @@
    </svg>
   </div>
 
+  <!-- Tags results -->
   <div class="results">
     {{- $pages := union .RegularPages .Sections }}
     {{ range $pages }}
