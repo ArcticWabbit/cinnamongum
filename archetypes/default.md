@@ -7,4 +7,4 @@ tags: []
 
 ## Comments
 
-{{< chat {{ replace .Name "-" " " | title }} >}}
+{{< chat {{ .Name | title }} >}}
