@@ -20,6 +20,7 @@ collections:
       - {
           label: "Comment Section",
           name: "chat",
-          widget: "hidden",
+          widget: "markdown",
           default: "{{< chat .Name | title >}}",
+          modes: "raw",
         }
