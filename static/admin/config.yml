@@ -20,6 +20,7 @@ collections:
       - {
           label: "Chat Section",
           name: "chat",
-          widget: "hidden",
+          widget: "markdown",
           default: "{{< chat {{slug}} >}}",
+          modes: "raw",
         }
