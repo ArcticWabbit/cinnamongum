@@ -20,5 +20,6 @@ collections:
           label: "Body",
           name: "body",
           widget: "markdown",
-          default: "##Comments",
+          default: "<pre> ## Comments
+            {{< chat .Name | Title >}} </pre>",
         }
