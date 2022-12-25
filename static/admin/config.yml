@@ -17,3 +17,9 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Comment Section",
+          name: "chat",
+          widget: "hidden",
+          default: "{{< chat .Name | title >}}",
+        }
