@@ -14,5 +14,8 @@ outputs:
     - HTML
     - JSON
 
+imaging:
+  quality: 1
+
 author:
   name: "Nuzhat Radia"
