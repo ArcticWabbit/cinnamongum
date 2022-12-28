@@ -14,12 +14,5 @@ outputs:
     - HTML
     - JSON
 
-imaging:
-  anchor: Smart
-  bgColor: "#ffffff"
-  hint: photo
-  quality: 10
-  resampleFilter: Box
-
 author:
   name: "Nuzhat Radia"
