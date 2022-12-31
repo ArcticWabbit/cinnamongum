@@ -9,11 +9,18 @@
     <div class="container">
       <main class="main">
         {{ block "main" . }}
-          <!-- The part of the page that begins to differ between templates -->
+        <!-- The part of the page that begins to differ between templates -->
         {{ end }}
       </main>
 
       {{- partialCached "footer.html" . }}
     </div>
+
+    {{ $preview := resources.Get "js/preview.js" }} {{ $js := $preview |
+    resources.Fingerprint "sha256" }}
+    <script
+      src="{{ $js.Permalink }}"
+      integrity="{{ $js.Data.Integrity }}"
+    ></script>
   </body>
 </html>

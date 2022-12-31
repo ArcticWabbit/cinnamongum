@@ -1,7 +1,14 @@
 {{ define "main" }}
+{{ $image := .Resources.GetMatch .Params.image }}
+<div class="preview">
+  <div class="top-bar">
+    <h1 class="image-name">{{ .Title }}</h1>
+    <span class="close-btn"></span>
+  </div>
+  <img src="{{ ( $image.Resize "2560x" ).RelPermalink }}" class="preview-image">
+</div>
 <div class="post">
   <div class="post__header">
-    {{ $image := .Resources.GetMatch .Params.image }}
     <img class="post__image" src="{{ ( $image.Resize "2560x" ).RelPermalink }}">
   </div>
 
