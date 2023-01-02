@@ -4,7 +4,3 @@ date: {{ .Date }}
 image: ""
 tags: []
 ---
-
-## Comments
-
-{{< chat {{ .Name | title }} >}}
